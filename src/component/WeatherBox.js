@@ -4,6 +4,7 @@ import WeatherIcon from "./WeatherIcon";
 import { WiStrongWind, WiHumidity, WiCloud } from "react-icons/wi";
 
 const weatherBox = ({ weather }) => {
+  /*
   let iconurl = "";
   if (weather) {
     console.log("현재온도 : " + weather?.main.temp);
@@ -18,6 +19,7 @@ const weatherBox = ({ weather }) => {
     iconurl =
       "http://openweathermap.org/img/w/" + weather?.weather[0].icon + ".png";
   }
+ */
 
   return (
     <div className="weather-box">

@@ -9,31 +9,57 @@ import {
   WiDayThunderstorm,
   WiDaySnow,
   WiFog,
+  WiNightAltCloudy,
+  WiNightShowers,
+  WiNightRain,
+  WiNightThunderstorm,
+  WiSnow,
 } from "react-icons/wi";
 
 const WeatherIcon = ({ icon }) => {
-  if (!icon) icon = "01";
-  icon = icon.substr(0, 2);
+  //if (!icon) icon = "01";
+  //icon = icon.substr(0, 2);
 
   switch (icon) {
-    case "01": //clear sky
+    //day
+    case "01d": //clear sky
       return <WiNightClear />;
-    case "02": //few clouds
+    case "02d": //few clouds
       return <WiDayCloudy />;
-    case "03": //scattered clouds
+    case "03d": //scattered clouds
       return <WiCloud />;
-    case "04": //broken clouds
+    case "04d": //broken clouds
       return <WiCloudy />;
-    case "09": //shower rain
+    case "09d": //shower rain
       return <WiDayShowers />;
-    case "10": //rain
+    case "10d": //rain
       return <WiDayRain />;
-    case "11": //thunderstorm
+    case "11d": //thunderstorm
       return <WiDayThunderstorm />;
-    case "13": //snow
+    case "13d": //snow
       return <WiDaySnow />;
-    case "50": //mist
+    case "50d": //mist
       return <WiFog />;
+    //night
+    case "01n": //clear sky
+      return <WiNightClear />;
+    case "02n": //few clouds
+      return <WiNightAltCloudy />;
+    case "03n": //scattered clouds
+      return <WiCloud />;
+    case "04n": //broken clouds
+      return <WiCloudy />;
+    case "09n": //shower rain
+      return <WiNightShowers />;
+    case "10n": //rain
+      return <WiNightRain />;
+    case "11n": //thunderstorm
+      return <WiNightThunderstorm />;
+    case "13n": //snow
+      return <WiSnow />;
+    case "50n": //mist
+      return <WiFog />;
+
     default: //clear sky
       return <WiNightClear />;
   }
