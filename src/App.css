@@ -1,43 +1,44 @@
 body {
   background: url("/public/img/back.jpg");
   height: 100vh;
-  background-repeat : no-repeat;
-  background-size : cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.container{
+.container {
   display: flex;
-  justify-content: center; /*가로*/ 
+  justify-content: center; /*가로*/
   align-items: center; /*세로*/
-  height :100vh;
+  height: 100vh;
   flex-direction: column;
 }
 
-.weather-box{
-  width:40%;
-  height:300px;
+.weather-box {
+  width: 40%;
+  height: 300px;
   border: 3px solid white;
   padding: 50px;
   border-radius: 30px;
-  
 }
 
-.weather-button-box{
+.weather-box > div {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.weather-icon-box {
+  font-size: 130px;
+}
+
+.weather-temp-box {
+  font-size: 25px;
+}
+
+.weather-button-box {
   padding-top: 10px;
 }
 
-.weather-button-box > button{
+.weather-button-box > button {
   margin: 5px;
-}
-
-.left-box{
-  width: 50%;
-  float: left;
-  background: #ff0;
-}
-
-.right-box{
-  width: 50%;
-  float: right;
-  background: #aa0;
 }
