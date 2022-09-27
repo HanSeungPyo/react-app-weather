@@ -1,6 +1,7 @@
 import { FOCUSABLE_SELECTOR } from "@testing-library/user-event/dist/utils";
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import { WiStrongWind, WiHumidity, WiCloud } from "react-icons/wi";
 
 const weatherBox = ({ weather }) => {
   let iconurl = "";
@@ -28,6 +29,27 @@ const weatherBox = ({ weather }) => {
       </div>
       <div className="weather-temp-box">
         <b>{weather?.main.temp}</b>°C
+      </div>
+
+      <div className="weather-info-box">
+        <div className="weather-left-box">
+          <h1>
+            <WiStrongWind />
+          </h1>
+          <span>{weather?.wind.speed}m/s</span>
+        </div>
+        <div className="weather-center-box">
+          <h1>
+            <WiHumidity />
+          </h1>
+          {weather?.main.humidity}%
+        </div>
+        <div className="weather-right-box">
+          <h1>
+            <WiCloud />
+          </h1>
+          {weather?.clouds.all}%
+        </div>
       </div>
     </div>
   );
