@@ -24,7 +24,7 @@ const weatherBox = ({ weather }) => {
   return (
     <div className="weather-box">
       <div className="weather-header-box">
-        {weather?.name},{weather?.sys.country}
+        {weather?.name},{weather?.sys?.country}
       </div>
       <div className="weather-icon-box">
         <WeatherIcon icon={weather?.weather[0].icon} />
