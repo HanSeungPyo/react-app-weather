@@ -11,6 +11,7 @@ const WeaherButton = ({ cities, setCity, city }) => {
       >
         Current Location
       </Button>
+
       {cities.map((item, index) => (
         <Button
           variant={city == item ? "success" : "warning"}

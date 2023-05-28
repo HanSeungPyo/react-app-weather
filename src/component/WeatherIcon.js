@@ -17,9 +17,6 @@ import {
 } from "react-icons/wi";
 
 const WeatherIcon = ({ icon }) => {
-  //if (!icon) icon = "01";
-  //icon = icon.substr(0, 2);
-
   switch (icon) {
     //day
     case "01d": //clear sky
